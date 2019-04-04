@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>Bangla Time</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+  
+</head>
+<body style="font-family: 'Hind Siliguri', sans-serif;">
+<div id="app">
+    <div class="statusbar"></div>
+    				<div class="panel panel-left panel-cover theme-light">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">বাংলা টাইম</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block" style="margin: 6px 0; padding:0px;">
+            
+            	<div class="list" style="margin: 0px;">
+              <ul>
+              
+              
+                	<li>
+                      <a href="/about/" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">সাম্প্রতিক</div>
+                        </div>
+                      </a>
+                	</li>
+                
+                    <li>
+                      <a href="/about/" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">লাইভ টিভি</div>
+                        </div>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    
+              </ul>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- panel left -->
+    				<div class="panel panel-right panel-reveal theme-light">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">অন্যান্য লিংক</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+            
+            
+            
+            	<div class="list">
+              <ul>
+                <li>
+                  <a href="/about/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">About Us</div>
+                    </div>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="/about/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">Contact Us</div>
+                    </div>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="/about/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">Terms of Service</div>
+                    </div>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="/about/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">Privacy Statement</div>
+                    </div>
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- panel right -->
+
+	<div class="views tabs ios-edges">
+    				<div class="toolbar tabbar-labels toolbar-bottom-md">
+        <div class="toolbar-inner">
+          <a href="#view-home" class="tab-link tab-link-active">
+            <i class="icon f7-icons ios-only">home</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+            <i class="icon material-icons md-only">home</i>
+            <span class="tabbar-label">Home</span>
+          </a>
+          <a href="#view-catalog" class="tab-link">
+            <i class="icon f7-icons ios-only">list</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
+            <i class="icon material-icons md-only">view_list</i>
+            <span class="tabbar-label">Catalog</span>
+          </a>
+          <a href="#view-settings" class="tab-link">
+            <i class="icon f7-icons ios-only">settings</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
+            <i class="icon material-icons md-only">settings</i>
+            <span class="tabbar-label">Settings</span>
+          </a>
+        </div>
+      </div> <!-- footer tabs -->
+		<div id="view-home" class="view view-main tab tab-active">
+				<div class="page" data-name="home">
+         	 		<div class="navbar">
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                  <i class="icon f7-icons ios-only">menu</i>
+                  <i class="icon material-icons md-only">menu</i>
+                </a>
+              </div>
+              <div class="title sliding">বাংলা টাইম</div>
+              <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="right">
+                  <i class="icon f7-icons ios-only">more_vertical_fill</i>
+                  <i class="icon material-icons md-only">more_vert</i>
+                </a>
+              </div>
+            </div>
+          </div> <!-- Top Navbar -->
+          			<!------------------------------------------- Scrollable page content STARTS ------------------------------------->
+          			<div class="page-content">
+            <div class="block block-strong" style="margin:0px; padding:0px;">
+              <div class="toolbar tabbar tabbar-scrollable">
+                <div class="toolbar-inner">
+                  <a href="#tab-1" class="tab-link tab-link-active">সাম্প্রতিক</a>
+                  <a href="#tab-2" class="tab-link">লাইভ টিভি</a>
+                  <a href="#tab-3" class="tab-link">কলকাতা</a>
+                  <a href="#tab-4" class="tab-link">রাজ্য</a>
+                  <a href="#tab-5" class="tab-link">দেশ</a>
+                  <a href="#tab-6" class="tab-link">খেলা</a>
+                  <a href="#tab-7" class="tab-link">বিনোদন</a>
+                  <a href="#tab-8" class="tab-link">ব্যবসা</a>
+                  <a href="#tab-9" class="tab-link">লাইফ স্টাইল</a>
+                </div>
+              </div>
+  
+
+<div class="tabs-swipeable-wrap">
+   <div class="tabs">
+   		<div id="tab-1" class="page-content tab tab-active" style="padding-top:0px; padding-bottom:16px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block" style="padding:0px; margin:20px 0px 0px 0px;">
+
+                        <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper" style="margin-bottom:-16px;">
+              <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper" id="lblBanner">
+                  
+                  <div class="swiper-slide">
+                    <img src="framework7/images/samprotik1.jpg" alt="" srcset="" style="width: 100%; height:236px;">
+                    	<div class="chip color-red" style="border-radius:0px; font-size:18px; width:100%; background-color:#333333; margin-top:-72px;">
+                            <div class="chip-label">ফের অপসারিত সিবিআই প্রধান</div>
+                         </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="framework7/images/samprotik2.jpg" alt="" srcset="" style="width: 100%; height:236px;">
+                    <div class="chip color-red" style="border-radius:0px; font-size:18px; width:100%; background-color:#333333cc; margin-top:-72px;">
+                            <div class="chip-label">দুরন্ত খেলেও হার ভারতের</div>
+                         </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="framework7/images/samprotik4.jpg" alt="" srcset="" style="width: 100%; height:236px;">
+                    <div class="chip color-red" style="border-radius:0px; font-size:18px; width:100%; background-color:#333333cc; margin-top:-72px;">
+                            <div class="chip-label">২০২১ এ প্রথম মানুষ পাঠাবে ইসরো</div>
+                         </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="framework7/images/samprotik4.png" alt="" srcset="" style="width: 100%; height:236px;">
+                    <div class="chip color-red" style="border-radius:0px; font-size:18px; width:100%; background-color:#333333cc; margin-top:-72px;">
+                            <div class="chip-label">অ্যাক্সিডেন্টাল প্রাইম মিনিস্টার ছবিকে কেন্দ্র করে বিক্ষোভ কংগ্রেসের</div>
+                         </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="framework7/images/samprotik5.jpg" alt="" srcset="" style="width: 100%; height:236px;">
+                    <div class="chip color-red" style="border-radius:0px; font-size:18px; width:100%; background-color:#333333cc; margin-top:-72px;">
+                            <div class="chip-label">পূর্ব মেদিনীপুরে বাস দুর্ঘটনা, চালক সহ জখম ২০</div>
+                         </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="framework7/images/samprotik6.png" alt="" srcset="" style="width: 100%; height:236px;">
+                    <div class="chip color-red" style="border-radius:0px; font-size:18px; width:100%; background-color:#333333cc; margin-top:-72px;">
+                            <div class="chip-label">গবাদি পশুর জন্য ঘাস কাটতে গিয়ে গালে ঢুকল কাস্তে, হাসপাতালে কিশোরী</div>
+                         </div>
+                  </div>
+                </div>
+              </div>
+                        
+   
+                    
+              </div>
+       </div>        		
+                    
+                    
+                    
+
+        <div id="tab-2" class="page-content tab" style="padding-top:0px; padding-bottom:0px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block">
+                  		tab2
+             </div>
+        </div>
+              
+        <div id="tab-3" class="page-content tab" style="padding-top:0px; padding-bottom:0px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block">
+                  		tab3
+             </div>
+        </div>
+              
+        <div id="tab-4" class="page-content tab" style="padding-top:0px; padding-bottom:0px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block">
+                  		tab4
+             </div>
+        </div>
+        
+        <div id="tab-5" class="page-content tab" style="padding-top:0px; padding-bottom:0px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block">
+                  		tab5
+             </div>
+        </div>
+              
+        <div id="tab-6" class="page-content tab" style="padding-top:0px; padding-bottom:0px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block">
+                  		tab6
+             </div>
+        </div>
+        
+        <div id="tab-7" class="page-content tab" style="padding-top:0px; padding-bottom:0px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block">
+                  		tab7
+             </div>
+        </div>
+          
+        <div id="tab-8" class="page-content tab" style="padding-top:0px; padding-bottom:0px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block">
+                  		tab8
+             </div>
+        </div>  
+        
+        <div id="tab-9" class="page-content tab" style="padding-top:0px; padding-bottom:0px; margin-top:-20px; margin-bottom:-30px;">
+             <div class="block">
+                  		tab9
+             </div>
+        </div>  
+              
+              
+            </div>
+          </div>
+              
+     
+              
+   </div>
+
+       
+       <button class="col button button-fill color-blue" style="border-radius:0px; font-size:20px;"><img src="framework7/images/loading-9.gif"> BREAKING খবর <img src="framework7/images/loading-9.gif"></button>
+       
+       <p style="padding:0px 20px 0px 20px; border-bottom:1px solid #2196f3;">
+       	<marquee style="font-size:16px; color:#333333; font-weight:600;" scrollamount="4">
+      <i class="icon f7-icons ios-only color-red">more_vertical_fill</i> <i class="icon material-icons md-only color-red">more_vert</i>
+      রোগী মৃত্যু ঘিরে ধন্ধুমার মালদা মেডিক্যালে, জুনিয়র ডাক্তারদের নিগ্রহের অভিযোগ, অভিযুক্তরা গ্রেফতার না হওয়ার প্রতিবাদ, রাতের পর দুপুর থেকে ফের কর্মবিরতি জুনির ডাক্তারদের, প্রভাব হাসপাতালের পরিষেবায়।
+      <i class="icon f7-icons ios-only color-red">more_vertical_fill</i> <i class="icon material-icons md-only color-red">more_vert</i>
+       এটিএমে পিন জেনারেট করতে গিয়ে প্রতারণার ফাঁদে, রক্ষীর পরিচয় দিয়ে টাকা হাতিয়ে নিলেন প্রতারক, পুরো মাসের মাইনে খোয়ালেন দক্ষিণ বারাসাতের বাসিন্দা, অভিযুক্তর খোঁজে জয়নগর থানা।
+       </marquee>
+       </p>
+       
+       
+     
+ 
+                         <div class="list media-list inset" style="margin:0px;">
+                          <ul>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="framework7/images/aarokhabor1.jpg" width="120" height="90"/></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title" style="white-space:normal; font-size: 14px; font-weight: 600;">সন্দেহজনক পার্সেল ঘিরে আতঙ্ক</div>
+                                  </div>
+                                  <div class="item-subtitle" style="color:#FF0000;">বুধবার, ৯ জানুয়ারী, ২০১৯</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="framework7/images/aarokhabor2.jpg" width="120" height="90"/></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title" style="white-space:normal; font-size: 14px; font-weight: 600;">বিশ্বের প্রথম ভাঁজযুক্ত স্মার্টফোন নিয়ে এল এই সংস্থা</div>
+                                  </div>
+                                  <div class="item-subtitle" style="color:#FF0000;">বুধবার, ৯ জানুয়ারী, ২০১৯</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="framework7/images/aarokhabor3.jpg" width="120" height="90"/></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title" style="white-space:normal; font-size: 14px; font-weight: 600;">হৃত্বিকের জন্মদিনে সুজানের শুভেচ্ছা</div>
+                                  </div>
+                                  <div class="item-subtitle" style="color:#FF0000;">বুধবার, ৯ জানুয়ারী, ২০১৯</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="framework7/images/arokhabor3.png" width="120" height="90"/></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title" style="white-space:normal; font-size: 14px; font-weight: 600;">অ্যাক্সিডেন্টাল প্রাইম মিনিস্টার ছবিকে কেন্দ্র করে বিক্ষোভ কংগ্রেসের</div>
+                                  </div>
+                                  <div class="item-subtitle" style="color:#FF0000;">শুক্রবার, ১১ জানুয়ারী, ২০১৯</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="framework7/images/aarokhabor1.jpg" width="120" height="90"/></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title" style="white-space:normal; font-size: 14px; font-weight: 600;">সন্দেহজনক পার্সেল ঘিরে আতঙ্ক</div>
+                                  </div>
+                                  <div class="item-subtitle" style="color:#FF0000;">বুধবার, ৯ জানুয়ারী, ২০১৯</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="item-link item-content">
+                                <div class="item-media"><img src="framework7/images/aarokhabor1.jpg" width="120" height="90"/></div>
+                                <div class="item-inner">
+                                  <div class="item-title-row">
+                                    <div class="item-title" style="white-space:normal; font-size: 14px; font-weight: 600;">সন্দেহজনক পার্সেল ঘিরে আতঙ্ক</div>
+                                  </div>
+                                  <div class="item-subtitle" style="color:#FF0000;">বুধবার, ৯ জানুয়ারী, ২০১৯</div>
+                                </div>
+                              </a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+ 
+   
+            
+          </div>
+          			<!------------------------------------------ Scrollable page content ENDS ------------------------------------------->
+                    
+                    
+				</div> <!--- page ENDS Here -------------------------------->
+		</div> <!--- view-home ENDS Here -------------------------------->
+
+      				<div id="view-catalog" class="view tab"> </div> <!-- Catalog View -->
+      				<div id="view-settings" class="view tab"></div> <!-- Settings View -->
+
+	</div> <!-- views tabs ios-edges ENDS Here --------->
+</div> <!-- app ID ENDS Hre ----------------------->
+  
+  
+ <!-- <script src="cordova.js"></script>
+  -->
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript">
+    phonegapApp.initialize();
+  </script>
+</body>
+</html>
